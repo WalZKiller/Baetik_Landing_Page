@@ -3,16 +3,35 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
     background: #f5a8c5;
     margin: 0;
-    padding: 20px;
+    padding: 60px 20px;
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    @media screen and (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 export const Input = styled.div`
     margin: 0 20px;
-    border: solid 1px black;
+    
+    input {
+        width: 30vw;
+        height: 10vh;
+        border: solid 2px black;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        padding: 0 20px;
+
+        @media screen and (max-width: 1000px) {
+            width: 70vw;
+            margin-bottom: 20px;
+        }
+    }
 `;
 
 export const Button = styled.button`
@@ -25,7 +44,11 @@ export const Button = styled.button`
     padding: 20px;
     box-shadow: 2px 3px 10px grey;
     margin: 0 20px;
-    transition: 0.3s;
+    width: 200px;
+
+    @media screen and (max-width: 1000px) {
+        width: 75vw;
+    }
 
     :hover {
         background: rgba(255, 255, 255, 0.2);

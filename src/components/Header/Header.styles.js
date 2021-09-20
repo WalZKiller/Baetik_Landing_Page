@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 `;
 
 export const Title = styled.div`
@@ -16,10 +15,7 @@ export const Title = styled.div`
     font-size: 1.5rem;
     text-align: center;
     margin: 0 20px;
-
-    @media screen and (max-width: 700px) {
-        font-size: 1rem;
-    }
+    width: 80vw;
 `;
 
 export const Description = styled.div`
@@ -28,9 +24,5 @@ export const Description = styled.div`
     font-weight: 300;
     text-align: center;
     margin: 0 20px;
-
-
-    @media screen and (max-width: 700px) {
-        font-size: 1.5rem;
-    }
+    width: 80vw;
 `;

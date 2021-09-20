@@ -8,7 +8,7 @@ const EmailBar = () => (
         <Input>
             <input type="text" placeholder="Enter your email"></input>
         </Input>
-        <Button>Join Now!</Button>
+        <Button type="submit">Join Now!</Button>
     </Wrapper>
 )
 
